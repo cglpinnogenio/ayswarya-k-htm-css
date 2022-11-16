@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  margin: 0px;
+  border: none;
+}
+body {
+  background-color: rgba(0, 0, 0, 255);
+  color: white;
+  margin: 0px;
+}
+
+.common_container {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-option {
+  display: flex;
+}
+.container {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: white;
+  padding: 4rem;
+  width: 100%;
+}
+.input-award {
+  font-size: 4rem;
+  color: white;
+  font-weight: 300;
+}
+.input-nav {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+.input-submit {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.label_content {
+  align-items: flex-start;
+  position: relative;
+  flex-direction: column;
+  justify-items: flex-start;
+  height: 50rem;
+  width: 75rem;
+  padding: 3rem;
+  font-weight: lighter;
+}
+.header_input {
+  position: absolute;
+  font-size: 4.5rem;
+  top: 14rem;
+  font-weight: 500;
+}
+.label_paragraph {
+  position: absolute;
+  font-size: 2rem;
+  top: 23rem;
+}
+.image_input {
+  position: absolute;
+  top: 44rem;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.image-container {
+  position: absolute;
+  top: 22rem;
+  left: 100rem;
+}
+img {
+  border-radius: 2.5rem;
+  height: 40rem;
+  width: 28rem;
+  margin-bottom: 3rem;
+}
+.container-form {
+  background-color: rgba(35, 35, 35, 255);
+  position: relative;
+  margin-top: 15rem;
+}
+.container-image {
+  position: absolute;
+  left: 3rem;
+  right: 3rem;
+  height: 50rem;
+  background-color: rgba(46, 46, 46, 255);
+}
+.container-left {
+  margin-top: 8rem;
+  height: 35rem;
+  left: 10rem;
+  right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+}
+h2 {
+  border-bottom: 4rem;
+}
+
+.input-common {
+  background-color: rgba(46, 46, 46, 255);
+  border: none;
+  text-decoration: white;
+  font-size: 1.5rem;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container-right {
+  margin-top: 8rem;
+  height: 35rem;
+  right: 10rem;
+  left: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  border-left: 2px white;
+}
+#description {
+  height: 8rem;
+}
+h2 {
+  font-weight: lighter;
+}
+#Category {
+  color: white;
+}
