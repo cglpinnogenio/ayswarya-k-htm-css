@@ -181,11 +181,15 @@ img {
 }
 
 .input-option {
- 
+
   padding-right: 2rem;
 
 }
-#zipcode{max-width: 6rem;}
+
+#zipcode {
+  max-width: 6rem;
+}
+
 .submit {
   background-color: #5db644;
   border-radius: 2rem;
