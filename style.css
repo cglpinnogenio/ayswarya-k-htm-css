@@ -2,8 +2,13 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: inter;
+  src: url(./assets/fonts/Inter-Regular.ttf);
+}
+
 html {
-  font-size: 10px;
+  font-size: 62.5%;
   margin: 0px;
   border: none;
   width: 100%;
@@ -12,38 +17,46 @@ html {
 body {
   background-color: rgba(0, 0, 0, 255);
   color: white;
-  margin: 0px;
-
-
+  margin: 0;
+  font-family: "inter";
+  min-height: 100vh;
 }
 
 .common_container {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .container {
-  background-color: black;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-decoration: none;
   color: white;
-  padding: 5rem;
+  padding: 3rem;
   width: 100%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: fixed;
 }
 
 .input-award {
   font-size: 4rem;
   color: white;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .input-nav {
   display: flex;
-  font-size: 2rem;
+  font-size: 20px;
   justify-content: space-between;
   align-items: center;
   gap: 8rem;
+}
+
+.input-strong {
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .input-submit {
@@ -63,102 +76,92 @@ a {
   display: inline-flex;
   justify-items: flex-start;
   align-items: flex-start;
-  height: 50rem;
+  height: 120vh;
   width: 100%;
-  padding: 5rem;
+  padding: 50px;
 }
 
 .label-intro {
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: flex-start;
+  margin-top: 180px;
 }
 
 .header_input {
-  margin-bottom: 7rem;
-  font-size: 3.5rem;
-  font-weight: 700;
-  padding-top: 5rem;
+  margin-top: 50px;
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .label_paragraph {
-  font-size: 2rem;
+  margin-top: 50px;
+  font-size: 1.5rem;
   font-weight: lighter;
-  width: 90%;
-  z-index: 100;
-  overflow: hidden;
-  font-weight: 100;
+  max-width: 70%;
 }
 
 .check_input {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-decoration: underline;
-  margin-top: 3rem;
+  margin-top: 30px;
 }
 
 .image-container {
+  margin-top: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-end;
   align-items: flex-end;
   padding: 2rem;
   width: 100%;
-}
-
-/*.image-camera {
-  background-image: url("/assets\ Images/.image-camera");
-  height: 60rem;
-  width: 100%;
-}*/
-
-img {
   border-radius: 2.5rem;
-  height: 40rem;
-  width: 28rem;
-  margin-bottom: 3rem;
 }
 
 .container-form {
-  background-color: rgba(35, 35, 35, 255);
+  background-color:rgba(35,35,35,255);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 90%;
-  margin-top: 10rem 0rem 8rem;
-
+  height: 120vh;
+  background-image: url("/assets/images/camera.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
 }
 
 .container-image {
   display: flex;
   width: 90%;
-  height: 90%;
-  background-color: rgba(46, 46, 46, 255);
+  height: 100vh;
+  background-color:rgba(46,46,46,.4);
   justify-content: center;
   align-items: center;
-  border: 10rem;
   margin-top: 10rem;
+  margin-bottom: 8rem;
+  
+
 }
 
 .container-left {
-  z-index: 100;
   width: 100%;
-  display: inline-flex;
+  height: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-left: 8rem;
+  padding-left: 9rem;
+  
 }
 
 .container-right {
   width: 100%;
-  display: inline-flex;
+  height: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  border-left: 1px solid rgba(144, 144, 144, 255);
-  padding-left: 2.5rem;
+  border-left: 1px solid rgb(158,155,155) ;
+  padding-left: 5rem;
+
 }
 
 .header-form {
@@ -166,38 +169,37 @@ img {
   font-weight: lighter;
   font-size: 2rem;
   padding-bottom: 6rem;
+  color: white;
 }
 
 .input-common {
   background-color: transparent;
-  text-decoration: white;
   font-size: 1.5rem;
   height: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   border: none;
-  border-bottom: 1px solid rgba(144, 144, 144, 255);
+  border-bottom: 1px solid rgb(158,155,155);
   outline: none;
   color: white;
 }
 
-.input-option {
-
+ .input-option {
   padding-right: 2rem;
-
-}
+} 
 
 #zipcode {
-  max-width: 6rem;
+  width: 8rem;
 }
 
 .submit {
-  background-color: #5db644;
+  background-color: rgba(87,189,52,255);
   border-radius: 2rem;
   outline: none;
   cursor: pointer;
   border: none;
   height: 3rem;
   width: 15rem;
+  margin-right: 3rem;
 }
 
 .cancel {
@@ -210,61 +212,61 @@ img {
   height: 3rem;
   width: 15rem;
 }
-
-.input-strong:hover {
-  background-color: blueviolet;
-  font-weight: 200;
-}
+::placeholder{color:rgba(159,159,159,255);}
 
 #Category {
-  color: rgba(144, 144, 144, 255);
+  color: rgba(159,159,159,255);width: 34rem; 
 }
 
 #description {
-  background-color: transparent;
+width:62%;
   height: 10rem;
   border-radius: 1rem;
   margin-top: 2.5rem;
-  border: 1px solid rgb(122, 116, 116);
-
+  border: 1px solid rgb(158,155,155);
 }
 
 .input-radio {
   accent-color: white;
   font-size: 1.5rem;
-  color: rgb(122, 116, 116);
+  color: rgba(159,159,159,255);
+  accent-color: rgb(20, 16, 16);
 }
 
 .description-box {
   font-size: 1.5rem;
-  color: rgb(150, 141, 141);
-  padding-top: 4rem;
+  color:white;
+  padding-top: 6rem;
 }
 
 .payment {
   font-size: 1.5rem;
 }
-
+#firstname{width:30rem ;}
+#email{width:30rem ;}
+#phone{width: 29rem;}
+#Address{width: 26rem;}
+#Address-tye{width: 25rem;}
 #city {
-  color: rgba(144, 144, 144, 255);
-  border-bottom: 1px solid rgba(144, 144, 144, 255);
-  outline: none;
+  color: rgba(159,159,159,255);
+  border-bottom: 1px solid rgb(158,155,155);
+  outline: none;width: 13rem;margin-right: 4rem;
 }
 
 #state {
-  color: rgba(144, 144, 144, 255);
-  border-bottom: 1px solid rgba(144, 144, 144, 255);
+  color: rgba(159,159,159,255);width: 8rem;
+  border-bottom: 1px solid rgb(158,155,155);
   outline: none;
 }
 
 #country {
-  color: rgba(144, 144, 144, 255);
-  border-bottom: 1px solid rgba(144, 144, 144, 255);
-  outline: none;
+  color: rgba(159,159,159,255);
+  border-bottom: 1px solid rgb(158,155,155);
+  outline: none;width: 13rem;margin-right: 4rem;
 }
-
+#credit{width: 34rem;}
 #card {
-  margin-top: 1.5rem;
+  margin-top: 1.5rem;width: 34rem;
 }
 
 #agree {
@@ -275,7 +277,7 @@ img {
 }
 
 span {
-  color: blue;
+  color: #3289bd;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
