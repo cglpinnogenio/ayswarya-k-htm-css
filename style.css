@@ -12,49 +12,54 @@ html {
   font-size: 62.5%;
   border: none;
   width: 100%;
+  margin: 0;
 }
 
 body {
   background-color: rgba(0, 0, 0, 225);
-  color: white;
+  color: rgba(255, 255, 255, 255);
   margin: 0;
   width: 100vw;
   font-family: "inter";
- height: 100vh;
- overflow-x: hidden;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 .common_container {
   display: flex;
   flex-direction: column;
   width: 100%;
-   margin: auto; 
+  margin: auto;
 }
 
 .container {
-  background-color: transparent;
+  background-color: black;
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
+  flex-wrap: wrap;
   text-decoration: none;
-  color: white;
-  padding: 4rem;
+  color: rgba(255, 255, 255, 255);
+  padding: 3.5rem;
   width: 100%;
   position: fixed;
+  z-index: 100;
 }
 
 .input-award {
   font-size: 4rem;
-  color: white;
+  color: rgba(255, 255, 255, 255);
   font-weight: 700;
 }
 
 .input-nav {
   display: flex;
   font-size: 20px;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8rem;
+  margin-top: .5remss;
 }
 
 .input-strong {
@@ -71,7 +76,7 @@ body {
 a {
   font-weight: 400;
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 255);
   cursor: pointer;
 }
 
@@ -79,20 +84,23 @@ a {
   display: inline-flex;
   justify-items: flex-start;
   align-items: flex-start;
-  height: 120vh;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
   padding: 50px;
 }
 
 .label-intro {
   margin-top: 180px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .header_input {
   margin-top: 50px;
   font-size: 4rem;
   font-weight: 600;
-  font-family: "inter";
+  font-family: Inter;
 }
 
 .label_paragraph {
@@ -115,6 +123,7 @@ a {
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
+  flex-wrap: wrap;
   padding: 2rem;
   width: 100%;
   border-radius: 2.5rem;
@@ -123,76 +132,66 @@ a {
 .container-form {
   background-color: rgba(35, 35, 35, 255);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 120vh;
+  width: 100%;
+  min-height: 100vh;
   background-image: url("/assets/images/cameraorg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: auto;
 }
 
 .container-image {
   display: flex;
-  width: 90vw;
-  height: 100vh;
-  background-color: rgba(46, 46, 46, .3);
-  justify-content: center;
+  width: 90%;
+  min-height: 90vh;
+  background-color: rgba(78, 78, 78, 0.1);
+  justify-content: space-around;
   align-items: center;
-  margin-top: 10rem;
-  margin-bottom: 8rem;
-
-
+  flex-wrap: wrap;
+  margin-top: 8rem;
+  margin-bottom: 10rem;
 }
 
 .container-left {
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 50%;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 90vh;
   padding-left: 9rem;
-
+  border-right: 1px solid rgb(158, 155, 155);
 }
 
 .container-right {
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 50%;
   justify-content: flex-start;
   align-items: flex-start;
-  border-left: 1px solid rgb(158, 155, 155);
-  padding-left: 5rem;
+  flex-wrap: wrap;
+  /* border-left: 1px solid rgb(158, 155, 155); */
 
+  padding-left: 4rem;
 }
 
 .header-form {
-  margin-top: 3rem;
+  margin-top: 4.5rem;
   font-weight: lighter;
-  font-size: 2rem;
-  padding-bottom: 6rem;
-  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: rgba(255, 255, 255, 255);
 }
 
 .input-common {
   background-color: transparent;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   height: 3rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
   border: none;
   border-bottom: 1px solid rgb(158, 155, 155);
   outline: none;
-  color: white;
-}
-
-.input-option {
-  padding-right: 2rem;
-}
-
-#zipcode {
-  width: 8rem;
+  color: rgba(255, 255, 255, 255);
 }
 
 .submit {
@@ -207,13 +206,13 @@ a {
 }
 
 .cancel {
-  background-color: black;
-  color: white;
+  background-color: rgb(12, 2, 2);
+  color: rgba(255, 255, 255, 255);
   border-radius: 2rem;
   outline: white;
   cursor: pointer;
   border: transparent;
-  height: 3rem;
+  height: 3.5rem;
   width: 15rem;
 }
 
@@ -224,36 +223,44 @@ a {
 #Category {
   color: rgba(159, 159, 159, 255);
   width: 34rem;
+  margin-top: 5rem;
 }
 
-#description {
-  width: 62%;
-  height: 10rem;
+#description-box {
+  width: 52%;
+  height: 13rem;
   border-radius: 1rem;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   border: 1px solid rgb(158, 155, 155);
+  background-color: rgba(51, 51, 51, 255);
 }
 
 .input-radio {
-  accent-color: white;
-  font-size: 1.5rem;
+  display: flex;
+  accent-color: rgba(255, 255, 255, 255);
+  font-size: 1.7rem;
   color: rgba(159, 159, 159, 255);
-  accent-color: rgb(20, 16, 16);
-
+  accent-color: rgb(12, 2, 2);
+  margin-bottom: 5rem;
 }
 
-.description-box {
+.radio-male {
+  margin-right: 4rem;
+}
+
+.description-label {
   font-size: 1.5rem;
-  color: white;
-  padding-top: 6rem;
+  color: rgba(255, 255, 255, 255);
+  padding-top: 2rem;
 }
-
+/* .input-option{margin-top: 1rem;} */
 .payment {
   font-size: 1.5rem;
 }
 
 #firstname {
   width: 30rem;
+  margin-top: 4.5rem;
 }
 
 #email {
@@ -268,8 +275,10 @@ a {
   width: 26rem;
 }
 
-#Address-tye {
+#Address-type {
   width: 25rem;
+  margin-top: 0.5rem;
+  height: 1rem;
 }
 
 #city {
@@ -277,12 +286,12 @@ a {
   border-bottom: 1px solid rgb(158, 155, 155);
   outline: none;
   width: 13rem;
-  margin-right: 4rem;
+  margin-right: 2rem;
 }
 
 #state {
   color: rgba(159, 159, 159, 255);
-  width: 8rem;
+  width: 7rem;
   border-bottom: 1px solid rgb(158, 155, 155);
   outline: none;
 }
@@ -292,7 +301,11 @@ a {
   border-bottom: 1px solid rgb(158, 155, 155);
   outline: none;
   width: 13rem;
-  margin-right: 4rem;
+  margin-right: 2rem;
+}
+
+#zipcode {
+  width: 7rem;
 }
 
 #credit {
@@ -300,32 +313,32 @@ a {
 }
 
 #card {
-  margin-top: 1.5rem;
+  margin-top: 1.3rem;
   width: 34rem;
 }
 
+#credit {
+  margin-bottom: 1.5rem;
+}
+
 #agree {
-  font-size: 2rem;
   align-items: flex-start;
-  accent-color: black;
-  margin: 5px 0px 20px;
-  align-content: center;
+  accent-color: rgba(0, 0, 0, 255);
+  margin: 5px 0px 40px;
+}
+
+.agree-label {
+  font-size: 1.5rem;
+  margin-top: 5px;
 }
 
 span {
   color: #3289bd;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   font-size: 1.5rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
-}
-
-.label-input {
-  font-size: 1.5rem;
 }

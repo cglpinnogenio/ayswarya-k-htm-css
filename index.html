@@ -70,8 +70,8 @@
             <div>
               <input type="text" name="Address" class="input-common" id="Address" placeholder="Street Address" />
             </div>
-            <div>
-              <input type="text" name="Address" class="input-common" id="Address-tye" />
+            <div class="input-plane">
+              <input type="text" name="Address" class="input-common" id="Address-type" />
             </div>
             <div class="input-option">
               <select name="city" id="city" class="input-common">
@@ -97,19 +97,23 @@
               <input type="num" id="zipcode" class="input-common" placeholder="Zipcode" />
             </div>
             <div class="input-radio">
-              <input type="radio" name="gender" id=" male" checked />
-              <label for="male">Male</label>
-              <input type="radio" name="gender" id="female" />
-              <label for="female">Female</label>
+              <div class="radio-male">
+                <input type="radio" name="gender" id=" male" checked />
+                <label for="male">Male</label>
+              </div>
+              <div class="radio-female">
+                <input type="radio" name="gender" id="female" />
+                <label for="female">Female</label>
+              </div>
             </div>
         </div>
         <div class="container-right">
           <div class="label-input">
-            <div class="description-box">
+            <div class="description-label">
               <label for="description">Description</label>
             </div>
             <div>
-              <textarea name="description" id="description" name="description" class="input-common">
+              <textarea name="description" id="description-box" name="description" class="input-common">
               </textarea>
             </div>
           </div>
@@ -136,9 +140,9 @@
             <div>
               <label for="terms"><span>Terms and Conditions</span></label>
             </div>
-            <div class="label-input">
+            <div class="label-input agree-label">
               <input type="checkbox" name="agree" id="agree" />
-              <label for="agree"> I Agree</label>
+              <label for="agree">  I Agree</label>
             </div>
           </div>
           <div class="input-option">
