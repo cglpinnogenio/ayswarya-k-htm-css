@@ -25,7 +25,7 @@ body {
 
 .common_container {
   margin: auto;
-  max-width: 1500px;
+  max-width: 150rem;
 }
 
 .container {
@@ -50,11 +50,12 @@ body {
 
 .input-nav {
   display: flex;
-  font-size: 20px;
-  justify-content: space-between;
+  font-size: 2rem;
+  /* justify-content: space-between; */
   align-items: baseline; 
   flex-wrap: wrap;
-  gap: 9rem;
+   gap: 9rem; 
+  /* width: 40%; */
 }
 
 .input-strong {
@@ -83,9 +84,10 @@ a {
   align-items: center;
   flex-wrap: wrap;
   background-color: #000000;
-  margin-left:30px; 
-  height: 120vh;
-  padding-top: 1rem;
+  /* margin-left:30px; 
+  min-height:80rem;  
+  padding-top: 1rem;   */
+  padding: 12rem 2rem; 
 }
 
 .label-intro {
@@ -105,7 +107,7 @@ a {
 }
 
 .label_paragraph {
-  margin-top: 50px;
+  margin-top: 5rem;
   font-size: 1.5rem;
   font-weight: "roboto";
 
@@ -116,7 +118,7 @@ a {
   text-decoration: underline;
   margin-top: 30px;
   font-family:"roboto" ;
-  padding-bottom: 5px;
+  padding-bottom: .5rem;
 }
 
 .image-container {
@@ -127,7 +129,6 @@ a {
 }
 
 .container-form {
-  flex-grow: 3;
   flex-basis: 100%;
   background-color: #000000;
   display: flex;
@@ -140,7 +141,8 @@ a {
 }
 
 .container-image {
-  flex-grow: 2;
+  /* flex-grow: 2; */
+  width: 100%;
   display: flex;
   background-color: rgba(78, 78, 78, 0.1);
   box-sizing: border-box;
@@ -190,7 +192,7 @@ a {
   outline: none;
   cursor: pointer;
   border: none;
-  height: 3rem;
+  height: 3.5rem;
   width: 30%;
   margin-right: 3rem;
 }
@@ -202,7 +204,7 @@ a {
   outline: none;
   cursor: pointer;
   border: 0.5px solid #999595;
-  height: 3rem;
+  height: 3.5rem;
   width: 30%;
   margin-bottom: 4rem;
 }
@@ -315,7 +317,7 @@ a {
 
 #agree {
   align-items: flex-start;
-  accent-color: rgba(0, 0, 0, 255);
+  accent-color:#000000;
   margin: 5px 0px 35px;
 }
 
