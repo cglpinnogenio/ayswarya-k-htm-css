@@ -1,12 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
-  </head>
-  <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Sample form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="common_container">
+    <div class="container">
+      <div class="input-award">
+        <a href="#" target="blank">AWARDS</a>
+      </div>
+      <div class="input-nav">
+        <a href="#" target="blank">ABOUT US</a>
+        <a href="#" target="blank">CONTACT</a>
+        <div class="input-strong">
+          <a href="#" target="blank">OUR COMPETIONS</a>
+        </div>
+      </div>
+      <div class="input-submit">
+        <a href="#" target="blank">SIGN IN/ </a>
+        <a href="#" target="blank">SIGN UP</a>
+      </div>
+    </div>
+    <div class="label_content">
+      <div class="label-intro">
+        <div class="header_input">
+          Welcome to the competition
+        </div>
+        <div class="label_paragraph">
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac, nec viverra pretium.
+          Adipiscing sit quisque mauris est sit tristique nunc mauris. Urna, malesuada elementum,
+          pellentesque luctus at dui feugiat. Sollicitudin leo lacus sagittis purus nec phasellus dui.
+          Libero scelerisque venenatis duis ornare. Ut tellus dignissim quam auctor hac morbi
+          eleifend enim, non. Metus, semper facilisi aliquet massa. Netus morbi elit quam pulvinar
+          blandit facilisis faucibus. Nunc pellentesque cursus pretium eget libero.
+
+        </div>
+        <div class="check_input">
+          <a href="#" target="blank">Click to see more</a>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="/assets/images/tree.svg" alt=" photo" />
+      </div>
+    </div>
+
+    <div class="container-form">
+      <div class="container-image">
+        <div class="container-left">
+          <div class="header-form">
+            Fill the Application
+          </div>
+          <form>
+            <div>
+              <input type="text" name="firstname" id="firstname" class="input-common" placeholder="First Name" />
+            </div>
+            <div>
+              <input type="email" name="email" id="email" class="input-common" placeholder="Enter Email Address" />
+            </div>
+            <div>
+              <input type="number" name="phone" class="input-common" id="phone" placeholder="Phone Number" />
+            </div>
+            <div>
+              <input type="text" name="Address" class="input-common" id="Address" placeholder="Street Address" />
+            </div>
+            <div class="input-plane">
+              <input type="text" name="Address" class="input-common" id="Address-type" />
+            </div>
+            <div class="input-option">
+              <select name="city" id="city" class="input-common">
+                <option value="city">City </option>
+                <option value="kochi">Kochi</option>
+                <option value="calicut">Calicut</option>
+                <option value="kannur">Kannur</option>
+              </select>
+              <select name="state" id="state" class="input-common">
+                <option value="state">State</option>
+                <option value="kerala">Kerala </option>
+                <option value="karnataka">Karnataka </option>
+                <option value="tamilnadu">Tamilnadu </option>
+              </select>
+            </div>
+            <div class="input-option">
+              <select name="country" class="input-common" id="country">
+                <option value="country">Country</option>
+                <option value="india">India </option>
+                <option value="china">China </option>
+                <option value="usa">USA </option>
+              </select>
+              <input type="text" id="zipcode" class="input-common" placeholder="Zipcode" />
+            </div>
+            <div class="input-radio">
+              <div class="radio-male">
+                <input type="radio" name="gender" id=" male" checked />
+                <label for="male">Male</label>
+              </div>
+              <div class="radio-female">
+                <input type="radio" name="gender" id="female" />
+                <label for="female">Female</label>
+              </div>
+            </div>
+        </div>
+        <div class="container-right">
+          <div class="label-input">
+            <div class="description-label">
+              <label for="description">Description</label>
+            </div>
+            <div>
+              <textarea name="description" id="description-box" name="description" class="input-common">
+              </textarea>
+            </div>
+          </div>
+          <div class="input-option">
+            <select name="Category" id="Category" class="input-common" placeholder="Photo Contest Category">
+              <option value="photo">Photo Contest Category</option>
+              <option value="nature">Nature</option>
+              <option value="fashion">Fashion </option>
+              <option value="landscapes">landscapes </option>
+            </select>
+          </div>
+          <div class="label-input">
+            <div class="payment">
+              <label for="payment">Payment option</label>
+            </div>
+            <div>
+              <input type="text" name="card" id="card" class="input-common" placeholder="Name on Card*" required />
+            </div>
+            <div>
+              <input type="text" name="credit" id="credit" class="input-common" placeholder="Credit Card* " required />
+            </div>
+          </div>
+          <div>
+            <div>
+              <label for="terms"><span>Terms and Conditions</span></label>
+            </div>
+            <div class="label-input agree-label">
+              <input type="checkbox" name="agree" id="agree" />
+              <label for="agree"> I Agree</label>
+            </div>
+          </div>
+          <div class="input-option">
+            <input type="submit" value="Submit" class="submit" />
+            <input type="button" value="Cancel" class="cancel" />
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+</body>
+
 </html>
