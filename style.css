@@ -51,11 +51,10 @@ body {
 .input-nav {
   display: flex;
   font-size: 2rem;
-  /* justify-content: space-between; */
+  justify-content: space-between; 
   align-items: baseline; 
-  flex-wrap: wrap;
-   gap: 9rem; 
-  /* width: 40%; */
+  flex-wrap: wrap; 
+  width: 50%; 
 }
 
 .input-strong {
@@ -66,7 +65,7 @@ body {
 .input-submit {
   font-size: 2.5rem;
   font-style: italic;
-  font-weight: lighter;
+  font-weight: 300;
   align-items: baseline;
 }
 
@@ -84,9 +83,6 @@ a {
   align-items: center;
   flex-wrap: wrap;
   background-color: #000000;
-  /* margin-left:30px; 
-  min-height:80rem;  
-  padding-top: 1rem;   */
   padding: 12rem 2rem; 
 }
 
@@ -103,7 +99,6 @@ a {
   font-weight: 600;
   font-family: Inter;
   margin-top: 3rem;
-
 }
 
 .label_paragraph {
@@ -141,7 +136,6 @@ a {
 }
 
 .container-image {
-  /* flex-grow: 2; */
   width: 100%;
   display: flex;
   background-color: rgba(78, 78, 78, 0.1);
@@ -169,7 +163,7 @@ a {
 
 .header-form {
   margin-top: 4.5rem;
-  font-weight: lighter;
+  font-weight: 500;
   font-size: 2.5rem;
   margin-bottom: 3rem;
   color: rgba(255, 255, 255, 255);
@@ -231,7 +225,6 @@ a {
 
 .input-radio {
   display: flex;
-  accent-color: rgba(255, 255, 255, 255);
   font-size: 1.7rem;
   color: rgba(159, 159, 159, 255);
   accent-color: #000000;
